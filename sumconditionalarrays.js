@@ -1,12 +1,11 @@
 function difference(array, number) {
   let sum1 = 0, sum2 = 0, i, side1 = 0, side2 = 0,sum=0;
-  let numside1 = []
 
   for(i=0;i<array.length;i++){
     sum+=array[i];
   }
 
-  side2 = (sum - number) / 2;
+  side2 = (sum ) / 2;
 
   for (i = 0; i < array.length; i++) {
     if (array[i] % 3 == 0) {
@@ -32,6 +31,5 @@ function difference(array, number) {
   }
 }
 
-let array = [5,2,3,0];
-let number = 0;
-difference(array, number);
+let array = [3,10,3,3,1];
+difference(array);
